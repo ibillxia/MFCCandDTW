@@ -1,0 +1,22 @@
+####################################################
+#     Keywords Recognition via MFCC+DTW
+#
+# Author: Bill Xia
+# Blog: http://ibillxia.github.com
+# Email: ibillxia@gmail.com
+####################################################
+
+ This project is a simple keywords recognition system by DTW(Dynamic Time Warping).
+ 
+ The MFCC feature extraction part is refered from SPro5.0, which is an open source project
+for speech feature extraction. You can regard it as a simple version of SPro5.0 for cepstral
+analysis. The DTW algorithm is very simple here and havn't been optimized.
+ 
+ To use it, you should first get some speech for training and choose the best one as the model
+for each command. The criteria of choosing the best sentence is off to you. Here I choose the 
+class center point(centroid) as the best one. Then you can use it in the real applications.
+ 
+ Performance: for the three commands in my test session, only 2 errors in 39 test case, this means
+the overall error rate is only 5.128%.
+ 
+ Copyright (C) 2013 Bill Xia (ibillxia@gmail.com) 
